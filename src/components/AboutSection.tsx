@@ -4,42 +4,42 @@ import { Button } from "@/components/ui/button";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
+    <section id="about" className="py-12 sm:py-16 md:py-20 bg-muted/30">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
               About Us
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto" />
           </div>
 
-          <Card className="p-8 md:p-12 shadow-lg">
-            <div className="space-y-6">
-              <p className="text-lg text-foreground/90 leading-relaxed">
+          <Card className="p-6 sm:p-8 md:p-12 shadow-lg">
+            <div className="space-y-4 sm:space-y-6">
+              <p className="text-base sm:text-lg text-foreground/90 leading-relaxed">
                 Welcome to <span className="font-semibold text-primary">Hand Loom Weaving Saree</span>, 
                 where tradition meets craftsmanship. Led by Vigneshwaran and our dedicated team, 
                 we specialize in weaving sarees exactly as per your design orders.
               </p>
 
-              <p className="text-lg text-foreground/90 leading-relaxed">
+              <p className="text-base sm:text-lg text-foreground/90 leading-relaxed">
                 Our expertise lies in understanding your vision and bringing it to life through 
                 traditional hand loom techniques. We provide comprehensive guidance in choosing 
                 the perfect saree design, fabric, and patterns that match your preferences.
               </p>
 
-              <div className="bg-gradient-to-r from-primary/10 to-accent/10 p-6 rounded-lg border-l-4 border-primary">
-                <p className="text-lg font-medium text-foreground italic">
+              <div className="bg-gradient-to-r from-primary/10 to-accent/10 p-4 sm:p-6 rounded-lg border-l-4 border-primary">
+                <p className="text-base sm:text-lg font-medium text-foreground italic">
                   "Every saree we weave carries the essence of your dreams, woven with care and precision."
                 </p>
               </div>
 
-              <div className="pt-6 space-y-4">
+              <div className="pt-4 sm:pt-6 space-y-4">
                 <div className="flex items-start gap-3">
-                  <MapPin className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                  <MapPin className="h-5 w-5 sm:h-6 sm:w-6 text-primary flex-shrink-0 mt-1" />
                   <div>
-                    <p className="font-semibold text-foreground">Our Location</p>
-                    <p className="text-muted-foreground">
+                    <p className="font-semibold text-foreground text-sm sm:text-base">Our Location</p>
+                    <p className="text-muted-foreground text-sm sm:text-base">
                       Kothamangalam, KVB Bank Opposite<br />
                       P. Velur (TK), Namakkal (D.T), 637 213
                     </p>
@@ -50,12 +50,13 @@ const AboutSection = () => {
                   <Button
                     variant="whatsapp"
                     asChild
-                    className="flex-1"
+                    className="flex-1 min-h-[48px]"
                   >
                     <a
                       href="https://wa.me/919189889549"
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="text-sm sm:text-base"
                     >
                       <MessageCircle className="mr-2 h-4 w-4" />
                       WhatsApp: +91 91898 89549
@@ -65,9 +66,9 @@ const AboutSection = () => {
                   <Button
                     variant="outline"
                     asChild
-                    className="flex-1"
+                    className="flex-1 min-h-[48px]"
                   >
-                    <a href="tel:+919189889549">
+                    <a href="tel:+919189889549" className="text-sm sm:text-base">
                       <Phone className="mr-2 h-4 w-4" />
                       Call Us
                     </a>
